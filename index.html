@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>NevaTrip_2.2</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script defer src="./main.js"></script>
+    </head>
+    <body>
+    <fieldset>
+        <legend id="warning"></legend>
+        <div class="wrapper">
+            <div class="route wrapper__elem">
+                <label for="route">Выберите маршрут</label>
+                <select name="route" id="route">
+                    <option value="из А в В">из A в B</option>
+                    <option value="из В в А">из B в A</option>
+                    <option value="из А в В и обратно в А">из A в B и обратно в А</option>
+                </select>
+            </div>
+            <div class="time-there wrapper__elem">
+                <label for="time">Выберите время</label>
+                <select name="time" id="time">
+                    <option value="Выберите время">Выберите время</option>
+                    <option value="18:00(из А в В)">18:00(из A в B)</option>
+                    <option value="18:30(из А в В)">18:30(из A в B)</option>
+                    <option value="18:45(из А в В)">18:45(из A в B)</option>
+                    <option value="19:00(из А в В)">19:00(из A в B)</option>
+                    <option value="19:15(из А в В)">19:15(из A в B)</option>
+                    <option value="21:00(из А в В)">21:00(из A в B)</option>
+                    <option value="18:30(из В в А)">18:30(из B в A)</option>
+                    <option value="18:45(из В в А)">18:45(из B в A)</option>
+                    <option value="19:00(из В в А)">19:00(из B в A)</option>
+                    <option value="19:15(из В в А)">19:15(из B в A)</option>
+                    <option value="19:35(из В в А)">19:35(из B в A)</option>
+                    <option value="21:50(из В в А)">21:50(из B в A)</option>
+                    <option value="21:55(из В в А)">21:55(из B в A)</option>
+                </select>
+            </div>
+            <div class="time-back time-back_hidden wrapper__elem">
+                <label for="time">Выберите время</label>
+                <select name="time" id="time-back">
+                    <option value="Выберите время">Выберите время</option>
+                    <option value="18:30(из В в А)">18:30(из B в A)</option>
+                    <option value="18:45(из В в А)">18:45(из B в A)</option>
+                    <option value="19:00(из В в А)">19:00(из B в A)</option>
+                    <option value="19:15(из В в А)">19:15(из B в A)</option>
+                    <option value="19:35(из В в А)">19:35(из B в A)</option>
+                    <option value="21:50(из В в А)">21:50(из B в A)</option>
+                    <option value="21:55(из В в А)">21:55(из B в A)</option>
+                </select>
+            </div>
+            <div class="ticket-pick wrapper__elem">
+                <label for="num">Количество билетов</label>
+                <input id="num">
+                <button id="count">Посчитать</button>
+            </div>
+            <div class="result result_hidden wrapper__elem" id="result">
+                Заглушка
+            </div>
+            <div class="reset wrapper__elem">
+                <button id="reset">Сбросить</button>
+            </div>
+        </div>
+    </fieldset>
+    </body>
+</html>
